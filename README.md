@@ -1,83 +1,84 @@
 Gears
 ===
-Generic Educational Autonomous Robotics Simulator
 
-This simulator was created to allow anyone to experiment with robotics without owning a robot.
+Simulador Genérico de Robótica Autônoma Educacional
 
-Try it out at https://gears.aposteriori.com.sg
+Este simulador foi criado para permitir que qualquer pessoa experimente robótica sem possuir um robô.
 
-...or the latest version from github https://quirkycort.github.io/gears/public/
+Experimente em [https://gears.aposteriori.com.sg](https://gears.aposteriori.com.sg)
 
-It uses the Ev3dev api (...and some early support for Pybricks), so the code can run on an actual Lego Mindstorm EV3 if you have one.
+...ou a versão mais recente no GitHub [https://quirkycort.github.io/gears/public/](https://quirkycort.github.io/gears/public/)
 
-Installation
+Ele usa a API Ev3dev (...e algum suporte inicial para Pybricks), então o código pode ser executado em um Lego Mindstorm EV3 real, se você tiver um.
+
+Instalação
 ---
 
-The simulator is meant to be served through a webserver, and we maintain the site at https://gears.aposteriori.com.sg free for anyone to use.
+O simulador deve ser servido através de um servidor web, e mantemos o site em [https://gears.aposteriori.com.sg](https://gears.aposteriori.com.sg) gratuito para qualquer pessoa usar.
 
-If you wish to run your own local copy, download all files and put them in a directory on your server and that should be it.
-Due to CORS protection on web browsers, it will not work when served from a "file://" URL.
+Se você deseja executar sua própria cópia local, faça o download de todos os arquivos e coloque-os em um diretório no seu servidor e isso deve ser suficiente.
+Devido à proteção CORS nos navegadores web, ele não funcionará quando servido a partir de uma URL "file://".
 
-Without a Webserver
+Sem um Servidor Web
 ---
 
-If you do not have a webserver, but have Python3 installed on your computer, you can try...
+Se você não tem um servidor web, mas tem Python3 instalado em seu computador, você pode tentar...
 
-1. Download Gears from https://github.com/QuirkyCort/gears/archive/refs/heads/master.zip
-2. Change to the "gears/public" directory
-3. Run `python -m http.server 1337`
-Do not close the window with the Python command running.
+1. Baixe o Gears de [https://github.com/QuirkyCort/gears/archive/refs/heads/master.zip](https://github.com/QuirkyCort/gears/archive/refs/heads/master.zip)
+2. Mude para o diretório "gears/public"
+3. Execute `python -m http.server 1337`
+Não feche a janela com o comando Python em execução.
 
-This should get the site running on http://localhost:1337 (...try http://127.0.0.1:1337 if that doesn't work).
+Isso deve colocar o site em funcionamento em [http://localhost:1337](http://localhost:1337) (...tente [http://127.0.0.1:1337](http://127.0.0.1:1337) se isso não funcionar).
 
-The site may also be available to other users on the same network using http://your_IP_address:1337, where "your_IP_address" is replaced with your actual IP address.
-This may not work depending on your network configuration and your firewall settings.
+O site também pode estar disponível para outros usuários na mesma rede usando [http://seu_endereço_IP:1337](http://seu_endereço_IP:1337), onde "seu_endereço_IP" é substituído pelo seu endereço IP real.
+Isso pode não funcionar dependendo da configuração da sua rede e das configurações do seu firewall.
 
-If you do not wish to allow other users from accessing the site, you should run `python -m http.server 1337 --bind 127.0.0.1` instead.
+Se você não deseja permitir que outros usuários acessem o site, deve executar `python -m http.server 1337 --bind 127.0.0.1` em vez disso.
 
-Credits
+Créditos
 ---
-Created by A Posteriori (https://aposteriori.com.sg).
+Criado por A Posteriori ([https://aposteriori.com.sg](https://aposteriori.com.sg)).
 
-Other Contributors:
+Outros Contribuidores:
 
 Steven Murray
-* Football Arena
+* Arena de Futebol
 * ObjectTracker
-* Improvements to magnet
-* Wheel Actuators
+* Melhorias no ímã
+* Atuadores de Rodas
 
 humbug99
-* Pen
-* Multiple Python modules tabs
+* Caneta
+* Múltiplas abas de módulos Python
 
 Yuvix25
-* FLL Mission models
+* Modelos de missões FLL
 
-This simulator would not have been possible without the great people behind:
+Este simulador não seria possível sem as grandes pessoas por trás de:
 
-* Babylon.js https://babylonjs.org
-* Blockly https://developers.google.com/blockly
-* Skulpt https://skulpt.org
-* Ace https://ace.c9.io
-* Ammo.js https://github.com/kripken/ammo.js/ (port of Bullet https://pybullet.org/)
+* Babylon.js [https://babylonjs.org](https://babylonjs.org)
+* Blockly [https://developers.google.com/blockly](https://developers.google.com/blockly)
+* Skulpt [https://skulpt.org](https://skulpt.org)
+* Ace [https://ace.c9.io](https://ace.c9.io)
+* Ammo.js [https://github.com/kripken/ammo.js/](https://github.com/kripken/ammo.js/) (port do Bullet [https://pybullet.org/](https://pybullet.org/))
 
-Translations by:
+Traduções por:
 
 * Français: Sébastien CANET <scanet@libreduc.cc>
 * Nederlands: Henry Romkes
-* Ελληνικά: Eduact, https://eduact.org/en
+* Ελληνικά: Eduact, [https://eduact.org/en](https://eduact.org/en)
 * Español: edurobotic
-* Deutsch: Annette-Gymnasiums-Team (Johanna,Jule,Felix), germanicianus
+* Deutsch: Annette-Gymnasiums-Team (Johanna, Jule, Felix), germanicianus
 * Português: Mateus Lima
 * עברית: Koby Fruchtnis
 
-License
+Licença
 ---
-GNU General Public License v3.0
+Licença Pública Geral GNU v3.0
 
-The following Open Source software are included here for convenience.
-Please refer to their respective websites for license information.
+O seguinte software de código aberto está incluído aqui para conveniência.
+Por favor, consulte os respectivos sites para informações sobre licenças.
 
 * Babylon.js
 * Blockly

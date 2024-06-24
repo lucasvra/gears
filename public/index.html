@@ -35,7 +35,10 @@
 
   <!-- Add icon library -->
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-
+<script>window.onload = function(){
+  setLang('pt');
+};
+</script>
   <title>GearsBot</title>
 </head>
 
@@ -67,11 +70,11 @@
         <li id="navSim">Simulator</li>
       </ul>
       <div class="menuBar">
-        <div class="menuItem fileMenu">File</div>
+        <div class="menuItem fileMenu">Arquivo</div>
         <div class="menuItem pythonMenu">Python</div>
-        <div class="menuItem robotMenu">Robot</div>
-        <div class="menuItem worldsMenu">Worlds</div>
-        <div class="menuItem helpMenu">Help</div>
+        <div class="menuItem robotMenu">Robô</div>
+        <div class="menuItem worldsMenu">Mundos</div>
+        <div class="menuItem helpMenu">Ajuda</div>
       </div>
       <!-- <div class="news">
         News!
@@ -79,10 +82,10 @@
       </div>
       <div class="panelControlsArea">
         <div class="panelControls active" aria-labelledby="navBlocks">
-          <div class="saveBlockly hide">Save Now</div>
+          <div class="saveBlockly hide">Salvar</div>
         </div>
         <div class="panelControls " aria-labelledby="navPython">
-          <div class="savePython hide">Save Now</div>
+          <div class="savePython hide">Salvar</div>
         </div>
       </div>
     </nav>
@@ -91,7 +94,7 @@
       <div class="blocklyEditor panel active" aria-labelledby="navBlocks">
         <div id="blocklyDiv" style="height: 100%; width: 100%;"></div>
         <div id="blocklyHiddenDiv" style="height: 100%; width: 100%; position: absolute; top: -10000px;"></div>
-        <div id="blocklyPages"><span class="currentPage">Main</span></div>
+        <div id="blocklyPages"><span class="currentPage">Principal</span></div>
       </div>
 
       <div class="panel" aria-labelledby="navPython">
@@ -136,8 +139,8 @@
                 <td class="alt">Alt:</td>
               </tr>
               <tr>
-                <td class="dist" colspan="2">Distance:</td>
-                <td class="angle">Angle:</td>
+                <td class="dist" colspan="2">Distância:</td>
+                <td class="angle">Ângulo:</td>
               </tr>
             </table>
           </div>
@@ -172,7 +175,7 @@
 
         <div class="console">
           <div class="chevron"></div>
-          <div title="Clear Console"  class="clear">&#x239a;</div>
+          <div title="Limpar Console"  class="clear">&#x239a;</div>
           <pre class="content"></pre>
         </div>
       </div>

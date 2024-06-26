@@ -79,17 +79,8 @@ var main = new function() {
       }
 
       let menuItems = [
-        {html: 'Deutsch', line: false, callback: function() { setLang('de'); }},
-        {html: 'Ελληνικά', line: false, callback: function() { setLang('el'); }},
         {html: 'English', line: false, callback: function() { setLang('en'); }},
-        {html: 'Español', line: false, callback: function() { setLang('es'); }},
-        {html: 'Français', line: false, callback: function() { setLang('fr'); }},
-        {html: 'עברית', line: false, callback: function() { setLang('he'); }},
-        {html: 'Nederlands', line: false, callback: function() { setLang('nl'); }},
         {html: 'Português', line: false, callback: function() { setLang('pt'); }},
-        {html: 'tlhIngan', line: false, callback: function() { setLang('tlh'); }},
-        {html: 'Русский', line: false, callback: function() { setLang('ru'); }},
-        {html: 'Magyar', line: false, callback: function() { setLang('hu'); }},
       ];
 
       menuDropDown(self.$languageMenu, menuItems, {className: 'languageMenuDropDown', align: 'right'});
